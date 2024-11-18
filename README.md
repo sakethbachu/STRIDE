@@ -5,7 +5,7 @@
 
 <a href="https://wacv2025.thecvf.com/"><img alt="WACV" src="https://img.shields.io/badge/2025-WACV-9d4edd"></a> <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a> [![arXiv](https://img.shields.io/badge/arXiv-2312.16221-b31b1b.svg)](https://arxiv.org/abs/2312.16221) 
 
-https://github.com/user-attachments/assets/31e6ac1d-b70f-4711-93b7-92135bb070d9
+https://github.com/user-attachments/assets/06067279-5849-4e15-b084-48765995741c
 
 </div>
 
