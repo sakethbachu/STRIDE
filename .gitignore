@@ -1,0 +1,6 @@
+**/*.pyc
+/data/
+results/
+**/events.out.tfevents.*
+checkpoint
+/utils/

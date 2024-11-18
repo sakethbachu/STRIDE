@@ -1,0 +1,56 @@
+# General  
+train_2d: False
+no_eval: False
+finetune: True  #@@@
+partial_train: null
+
+# Traning 
+epochs: 30 #@@ 60
+checkpoint_frequency: 30
+batch_size: 1 #@@@@@ 32 
+dropout: 0.0
+learning_rate: 0.0002
+weight_decay: 0.01
+lr_decay: 0.99
+
+# Model
+maxlen: 243
+dim_feat: 512
+mlp_ratio: 2
+depth: 5
+dim_rep: 512
+num_heads: 8
+att_fuse: True
+
+# Data
+use_h36m: True #@@@@ chnage this 
+data_root: /data/AmitRoyChowdhury/Yash/MotionBERT/data/motion3d/consistent_pose_correct_map_gt  #@@@@@@@@@ change this
+subset_list: [H36M_bedlam_interp_com_block_occl_every10]  #@@@@@@@@@ change this , H36M_bedlam_interp_com_block_occl_every10, H36M_bedlam_interp_clean
+eval_pth_dir: /data/AmitRoyChowdhury/rohit/BEDLAM/store_pl/CLIFF_h36m_com_block_occl_every10
+# eval_pth_dir: /data/AmitRoyChowdhury/OCMotion/OCMotion_BEDLAM
+# pl_path: /data/AmitRoyChowdhury/rohit/BEDLAM/demo_images/BTS4/full_bedlam_ip_pl/G04109/field/140m/wb/G04109_set1_cams_DWC-MPTZ336XW_0007D81E134C_e1743035
+save_dir: infer_results_new/CLIFF_occ_h36m
+do_vis: True
+dt_file: /data/AmitRoyChowdhury/Yash/MotionBERT/data/motion3d/h36m_sh_conf_cam_source_final.pkl
+clip_len: 243
+data_stride: 81
+rootrel: True
+sample_stride: 1
+num_joints: 17
+no_conf: False
+gt_2d: False
+# Loss
+lambda_3d_pos: 1.0 #1.0 ## new loss
+lambda_3d_velocity: 20.0 #@@ 20.0
+lambda_scale: 0.5 #@@ 0.5
+lambda_lv: 200.0 #@@ 0.0
+lambda_lg: 0.0
+lambda_a: 0.0
+lambda_av: 0.0
+
+# Augmentation
+synthetic: False
+flip: True
+mask_ratio: 0.
+mask_T_ratio: 0.
+noise: False

@@ -1,0 +1,1 @@
+python run_stride.py --image_folder sample --output_folder results --cfg configs/demo_bedlam_cliff.yaml --ckpt data/ckpt/bedlam_cliff.ckpt
